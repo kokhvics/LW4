@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+OBLEPIXA
+{% endblock %}
+
+{% block body %}
+<center>
+  <table align="center">
+    <tr>
+      <td>
+        <form action="/anketa" method="POST">
+          <div class="dropdown">
+            <h1>Какая ты птица из энгри бердс?</h1>
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"  aria-haspopup="false" aria-expanded="false">
+              Выбери что больше нравится
+            </button>
+            <ul class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 shadow w-320px" data-bs-theme="light" aria-labelledby="dropdownMenuButton">
+              <li><input class="btn btn-secondary rounded-pill px-3 active" type="radio" name="options" value="option1" checked> Вариант 1</li>
+              <li><input class="btn btn-secondary rounded-pill px-3" type="radio" name="options" value="option2"> Вариант 2</li>
+              <li><input class="btn btn-secondary rounded-pill px-3" type="radio" name="options" value="option3"> Вариант 3</li>
+              <li><input class="btn btn-secondary rounded-pill px-3" type="radio" name="options" value="option4"> Вариант 4</li>
+				<li><input class="btn btn-secondary rounded-pill px-3" type="radio" name="options" value="option4"> Вариант 4</li>
+				<hr class="dropdown-divider">
+
+            </ul>
+          </div>
+          <button type="submit">Узнать ответ</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+</center>
+</div>
+
+{% endblock %}

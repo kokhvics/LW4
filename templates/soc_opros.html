@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+OBLEPIXA
+{% endblock %}
+
+{% block body %}
+<div align="center">
+    <div class="container">
+        <h1>Анкета</h1>
+        <form action="/test" method="post">
+          <label for="name">Имя:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="age">Возраст:</label><br>
+          <input type="text" id="age" name="age"><br>
+          <label for="favcolor">Ваш любимый цвет:</label><br>
+          <input type="text" id="favcolor" name="favcolor"><br>
+          <label for="zodiac">Ваш знак зодиака:</label><br>
+          <input type="text" id="zodiac" name="zodiac"><br>
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+          <input type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
